@@ -1,10 +1,9 @@
+import itertools
 import logging
 import os
 import sys
-import itertools
-
 from pathlib import Path
-from typing import Sequence
+from typing import Optional, Sequence
 
 from .utils import CalledProcessError, cmd_output
 
@@ -17,7 +16,7 @@ def has_domain_in_email(domain: str) -> bool:
     return email.strip().endswith(f"@{domain}")
 
 
-def main(argv: Sequence[str] | None = None) -> int:
+def main(argv: Optional[Sequence[str]] = None) -> int:
     if argv is None:
         argv = sys.argv[1:]
     if len(argv) == 0:
