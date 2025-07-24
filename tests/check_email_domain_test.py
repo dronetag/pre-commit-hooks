@@ -1,4 +1,5 @@
 import pytest
+
 from dtprecommit_hooks.check_email_domain import main
 from dtprecommit_hooks.utils import cmd_output
 

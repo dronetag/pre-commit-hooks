@@ -2,5 +2,5 @@
     name: check commiter's email
     description: ensure that the domain of the commiter's email is correct.
     entry: check-email-domain
-    args: ["dronetag.cz"]
+    args: ["dronetag.cz", "dronetag.com"]
     language: python

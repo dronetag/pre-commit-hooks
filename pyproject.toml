@@ -7,7 +7,7 @@ where = ["src"]
 
 [project]
 name = "dtprecommit_hooks"
-version = "1.0.0"
+version = "1.1.0"
 requires-python = ">=3.7"
 description = "Dronetag's pre-commit-hooks"
 readme = "README.md"
